@@ -149,7 +149,7 @@
                 <div class="mb-5" id="dynamic-text"><span class="text-primary">Our Gellery<span>
                 </div>
                 <div class="row" id="gallery">
-                   
+
                     <br>
                     <div class="col-lg-4 col-md-4 mb-4 mb-lg-0">
                         <img src="images/gallery2.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="" />
@@ -195,7 +195,7 @@
                 </div>
                 <div class=" mt-5" id="contact">
                     <h3 class="text-primary text-bold text-center">Contact Now</h3>
-                    <form class="row g-3 needs-validation" novalidate onsubmit="messagecontact()">
+                    <form class="row g-3 needs-validation" novalidate>
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" class="form-control" name="name" id="name" required>
@@ -220,7 +220,8 @@
                                 Please enter something
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary col-6 text-center my-2">Contact Now</button>
+                        <button type="button" class="btn btn-primary col-6 text-center my-2"
+                            onclick="messagecontact()">Contact Now</button>
                     </form>
                 </div>
                 <div class="my-3" id="subscribe">
@@ -239,7 +240,7 @@
 
                                 </div>
                             </div>
-                            <button type="submit" class="text-primary bg-dark text-bold ">Subscribe Now</button>
+                            <button type="button" class="text-white btn btn-primary " onclick="sendMail()">Subscribe Now</button>
                         </form>
                     </div>
                 </div>
@@ -249,7 +250,7 @@
                                 class="text-success">Developer</span> </h3>
                         <img class="card-img-top" src="images\slide1.jpg " alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-title">Mohan Lal Sharma</h4>
+                            <h4 class="card-title" id="slide"><span class="text-danger text-bold">Mohan Lal Sharma</span></h4><br>
                             <p class="card-text">I am a fullstack web developer. I create dynamic websites and also
                                 Static websites.
                                 <br>
@@ -355,27 +356,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="index.js"></script>
-    <!-- <script type="text/javascript">
-
-        function messagecontact() {
-            var email = document.getElementById('email').value;
-            var name = document.getElementById('name').value;
-            var sender = "mtech737703@gmail.com";
-            alert(email)
-            Email.send({
-                Host: 'smtp.gmail.com',
-                Username: sender,
-                Password: "9058843284",
-                To: email,
-                From: sender,
-                Subject: "TPO SHELL",
-                Body: "Thanks For contact my tpo shell\n with regards \n Mohan Lal Sharma",
-            }).then(function (message) {
-                alert('Thanks for contact')
-            });
-        }
-    </script> -->
-
 </body>
 
 </html>
